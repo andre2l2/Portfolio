@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #F2F2F2;
+    --second-color: #A6A6A6;
+    --blue-color: #0F528C;
+    --black-color: #0D0D0D;
+    --green-color: #4F7369;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
