@@ -1,3 +1,62 @@
+@media (max-width: 800px) {
+    #contacts  {
+        margin-top: 50vh;
+    }
+
+    #contacts div.container {
+        width: 250px;
+        height: 300px;
+        border: solid 8px var(--blue-color);
+    }
+
+    #contacts div.container h2 {
+        font-size: 35px;
+    }
+    
+    #contacts div.container p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    #contacts div.container {
+        width: 200px;
+        height: 310px;
+        border: solid 5px var(--blue-color);
+        margin-bottom: 100px;
+    }
+
+    #contacts div.container h2 {
+        font-size: 35px;
+    }
+    
+    #contacts div.container p {
+        font-size: 18px;
+    }
+
+    #contacts footer {
+        display: flex;
+        height: 50px;
+        width: 100vw;
+        bottom: 0px;
+    }
+
+    #contacts footer ul li {
+        padding: 0;
+    }
+
+    #contacts footer li img {
+        display: none;
+    }
+
+    #contacts footer li a {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
+
 #contacts {
     position: relative;
     height: 100vh;
