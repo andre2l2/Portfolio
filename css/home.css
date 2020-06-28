@@ -60,6 +60,15 @@
     }
 }
 
+@media (max-height: 550px) {
+    #home {
+       margin-bottom: 150vh; 
+    }
+    #home div.home-backgraudColor img {
+        display: none;
+    }
+}
+
 #home {
     height: 100vh;
     display: flex;

@@ -16,24 +16,7 @@
     #contacts div.container p {
         font-size: 18px;
     }
-}
-
-@media (max-width: 400px) {
-    #contacts div.container {
-        width: 200px;
-        height: 310px;
-        border: solid 5px var(--blue-color);
-        margin-bottom: 100px;
-    }
-
-    #contacts div.container h2 {
-        font-size: 35px;
-    }
     
-    #contacts div.container p {
-        font-size: 18px;
-    }
-
     #contacts footer {
         display: flex;
         height: 50px;
@@ -52,6 +35,23 @@
     #contacts footer li a {
         padding: 10px;
         font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    #contacts div.container {
+        width: 200px;
+        height: 310px;
+        border: solid 5px var(--blue-color);
+        margin-bottom: 100px;
+    }
+
+    #contacts div.container h2 {
+        font-size: 35px;
+    }
+    
+    #contacts div.container p {
+        font-size: 18px;
     }
 }
 
