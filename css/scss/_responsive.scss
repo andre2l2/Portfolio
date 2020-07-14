@@ -1,0 +1,188 @@
+@media (max-width: 1000px) {
+    #home div.profile img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 100% 100% 0 100%;
+        border: solid 8px $blueColor;
+        margin-right: 50px;
+    }
+
+    #home div.profile h1 p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    #home div.profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home div.profile img {
+        border-radius: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    #home div.profile h1 p {
+        text-align: center;
+        color: $primaryColor;
+    }
+}
+
+@media (max-width: 420px) {
+    #home div.profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home div.profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        margin: 0 0 20px 0;
+        border: solid 5px $blueColor;
+    }
+
+    #home div.profile h1 p {
+        text-align: center;
+        font-size: 15px;
+        color: $primaryColor;
+    }
+    #home div.home-backgraudColor img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-height: 550px) {
+    #home {
+       margin-bottom: 150vh; 
+    }
+    #home div.home-backgraudColor img {
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #contacts  {
+        margin-top: 50vh;
+    }
+
+    #contacts div.container {
+        width: 250px;
+        height: 300px;
+        border: solid 8px $blueColor;
+    }
+
+    #contacts div.container h2 {
+        font-size: 35px;
+    }
+    
+    #contacts div.container p {
+        font-size: 18px;
+    }
+    
+    #contacts footer {
+        display: flex;
+        height: 50px;
+        width: 100vw;
+        bottom: 0px;
+    }
+
+    #contacts footer ul li {
+        padding: 0;
+    }
+
+    #contacts footer li img {
+        display: none;
+    }
+
+    #contacts footer li a {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    #contacts div.container {
+        width: 200px;
+        height: 310px;
+        border: solid 5px $blueColor;
+        margin-bottom: 100px;
+    }
+
+    #contacts div.container h2 {
+        font-size: 35px;
+    }
+    
+    #contacts div.container p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1150px) {
+    #tech {
+        margin-top: 20px;
+    }
+
+    #tech div.tech-body ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+
+    #tech div.tech-body ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #tech div.tech-body ul li {
+        width: 200px;
+        height: 300px;
+        border: solid 8px $blueColor;
+    }
+
+    #tech div.tech-body ul li p {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    #tech {
+        margin-top: 60vh;
+    }
+    
+    #tech div.tech-body h2 {
+        font-size: 25px;
+    }
+
+    #tech div.tech-body ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.lineBlue {
+        display: none;
+    } 
+}
+
+@media (max-width: 400px) {
+    #tech div.tech-body h2 {
+        font-size: 18px;
+    }
+
+    #tech div.tech-body ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 5px $blueColor;
+    }
+}
