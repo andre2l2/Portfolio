@@ -1,11 +1,6 @@
-$primaryColor: #F2F2F2;
-$secondColor: #A6A6A6;
-$blueColor: #0F528C;
-$blackColor: #0D0D0D;
-$greenColor: #4F7369;
+$backgraudColor: #193441;
+$fontColor: #FCFFF5;
 
-@import './scss/responsive';
-@import './scss/home';
-@import './scss/reset';
-@import './scss/contacts';
-@import './scss/tech';
+@import './sass/reset';
+@import './sass/header';
+@import './sass/session';
