@@ -16,9 +16,13 @@ header {
             justify-content: space-around;
 
             li {
-                color: $fontColor;
-                font-size: 20px;
-                font-weight: 400;
+                a {
+                    color: $fontColor;
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+                
                 padding: 20px;
                 cursor: pointer;
             }

@@ -37,11 +37,59 @@ header div ul {
 }
 
 header div ul li {
+  padding: 20px;
+  cursor: pointer;
+}
+
+header div ul li a {
   color: #FCFFF5;
   font-size: 20px;
   font-weight: 400;
-  padding: 20px;
-  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 880px) {
+  section div#projects ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  section div#projects ul li div {
+    margin: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 665px) {
+  div.profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.profile img {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  div.profile h1 {
+    margin: 50px;
+    text-align: center;
+  }
 }
 
 section {
@@ -67,20 +115,76 @@ section div.profile {
           align-items: center;
 }
 
-section div.profile span {
-  width: 200px;
-  height: 200px;
-  background-image: url("../../img/profile.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 200px;
+section div.profile img {
+  width: 250px;
+  height: 250px;
   border-radius: 100%;
-  border: #193441 5px solid;
+  border: #193441 solid 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section div.profile h1 {
   color: #193441;
   margin-left: 50px;
   font-size: 30px;
+}
+
+section div#projects h2 {
+  color: #193441;
+  margin-left: 80px;
+}
+
+section div#projects ul {
+  margin-top: 20px;
+}
+
+section div#projects ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+section div#projects ul li img {
+  width: 450px;
+  height: 250px;
+  border: #193441 5px solid;
+}
+
+section div#projects ul li div {
+  width: auto;
+  margin-left: 30px;
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+section div#projects ul li div h3 {
+  font-size: 20px;
+  color: #193441;
+}
+
+section div#projects ul li div p {
+  margin: 20px 0;
+}
+
+section div#projects ul li div a {
+  color: #000AFF;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
