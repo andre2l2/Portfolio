@@ -37,13 +37,13 @@
 
 section {
     position: relative;
-    top: -250px;
+    top: -200px;
     margin: 0 auto;
     max-width: 1000px;
     background-color: $fontColor;
     border-radius: 50px;
-
-    height: 500vh; // timer limit
+    padding: 50px;
+    z-index: 1;
 
     div.profile {
         height: 60vh;
@@ -67,27 +67,32 @@ section {
     }
 
     div#projects {
+        margin-top: 20vh;
+
         h2 {
             color: $backgraudColor;
-            margin-left: 80px;
+            width: 100%;
+            text-align: center;
+            padding: 30px;
         }
 
         ul {
-            margin-top: 20px;
 
             li {
                 display: flex;
                 justify-content: center;
-                margin-bottom: 50px ;
+                margin: 0 auto 50px auto;
 
                 img {
                     width: 450px;
                     height: 250px;
                     border: $backgraudColor 5px solid;
+                    object-fit: cover;
+                    object-position: top;
                 }
 
                 div {
-                    width: auto;
+                    width: 400px;
                     margin-left: 30px;
                     background-image: none;  
                     display: flex;                
@@ -112,6 +117,45 @@ section {
                     }
                 }
             }
+        }
+    }
+
+    div#sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20vh;
+        
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: $backgraudColor solid 3px;
+            object-fit: cover;
+        }
+
+        h3 {
+            margin: 20px 0;
+            color: $backgraudColor;
+        }
+
+        p {
+            background-color: $backgraudColor;
+            color: $fontColor;
+            padding: 20px;
+            font-size: 16px;
+            font-weight: 300;
+            border-radius: 15px;
+        }
+    }
+
+    div#contato {
+        margin-top: 20vh;
+        h2 {
+            width: 100%;
+            text-align: center;
+            color: $backgraudColor;
         }
     }
 }
