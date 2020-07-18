@@ -3,9 +3,6 @@
     height: 100px;
     width: 100px;
   }
-  section div.profile h1 {
-    background-color: red;
-  }
 }
 
 @media (max-width: 880px) {
@@ -33,6 +30,10 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #193441;
 }
@@ -46,10 +47,9 @@ li {
 }
 
 header {
-  background-image: url("https://images.unsplash.com/photo-1529440547539-b8500cf6c0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
-  background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1533282960533-51328aa49826?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1330&q=80");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 50vh;
 }
 
@@ -69,8 +69,12 @@ header div ul {
 }
 
 header div ul li {
-  padding: 20px;
+  padding: 10px;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: relative;
+  background: transparent;
 }
 
 header div ul li a {
@@ -78,6 +82,22 @@ header div ul li a {
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
+}
+
+header div ul li::after {
+  background-color: #FCFFF5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  height: 2px;
+  width: 0%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header div ul li:hover::after {
+  width: 100%;
 }
 
 section {
@@ -230,7 +250,7 @@ section div#contato h2 {
 }
 
 footer {
-  background-image: url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1066&q=80");
+  background-image: url("https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

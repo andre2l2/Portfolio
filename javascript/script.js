@@ -1,4 +1,4 @@
-function constructorProject() {
+function render() {
     const $projects = document.querySelector('#projects ul');
 
     for (id in links) {
@@ -19,4 +19,4 @@ function constructorProject() {
     }
 }
 
-constructorProject();
+render();
