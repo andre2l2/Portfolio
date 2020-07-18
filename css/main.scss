@@ -1,6 +1,7 @@
 $backgraudColor: #193441;
 $fontColor: #FCFFF5;
 
+@import './sass/responsive';
 @import './sass/reset';
 @import './sass/header';
 @import './sass/session';

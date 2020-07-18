@@ -1,3 +1,32 @@
+@media (max-width: 720px) {
+  section div.profile img {
+    height: 100px;
+    width: 100px;
+  }
+  section div.profile h1 {
+    background-color: red;
+  }
+}
+
+@media (max-width: 880px) {
+  section div#projects ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  section div#projects ul li div {
+    margin-top: 20px;
+  }
+}
+
 * {
   margin: 0;
   outline: none;
@@ -6,6 +35,10 @@
 
 body {
   background-color: #193441;
+}
+
+ul {
+  padding: 0;
 }
 
 li {
@@ -47,50 +80,6 @@ header div ul li a {
   text-decoration: none;
 }
 
-@media (max-width: 880px) {
-  section div#projects ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  section div#projects ul li div {
-    margin: 0;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 665px) {
-  div.profile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  div.profile img {
-    margin-top: 50px;
-    width: 100px;
-    height: 100px;
-  }
-  div.profile h1 {
-    margin: 50px;
-    text-align: center;
-  }
-}
-
 section {
   position: relative;
   top: -200px;
@@ -119,36 +108,33 @@ section div.profile img {
   width: 250px;
   height: 250px;
   border-radius: 100%;
-  border: #193441 solid 5px;
+  border: #193441 solid 3px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 section div.profile h1 {
   color: #193441;
-  margin-left: 50px;
+  padding: 30px;
   font-size: 30px;
 }
 
 section div#projects {
-  margin-top: 20vh;
+  margin-top: 5vh;
 }
 
 section div#projects h2 {
   color: #193441;
   width: 100%;
   text-align: center;
-  padding: 30px;
+  margin-bottom: 30px;
 }
 
 section div#projects ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto 50px auto;
+  margin-top: 20px;
 }
 
 section div#projects ul li img {
@@ -162,8 +148,6 @@ section div#projects ul li img {
 }
 
 section div#projects ul li div {
-  width: 400px;
-  margin-left: 30px;
   background-image: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,6 +160,7 @@ section div#projects ul li div {
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
+  padding: 20px;
 }
 
 section div#projects ul li div h3 {
@@ -228,8 +213,8 @@ section div#sobre h3 {
 section div#sobre p {
   background-color: #193441;
   color: #FCFFF5;
-  padding: 20px;
-  font-size: 16px;
+  padding: 30px;
+  font-size: 20px;
   font-weight: 300;
   border-radius: 15px;
 }
