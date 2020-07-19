@@ -1,0 +1,49 @@
+@media (max-width: 900px) {
+    section {
+        div#projects {
+            ul {
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    div {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    section {
+        div.profile {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    footer {
+        div {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                text-align: center;
+            }
+
+            ul li {
+                a {
+                    font-size: 12px;  
+                }
+            }
+        }
+    }
+}

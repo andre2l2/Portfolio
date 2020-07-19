@@ -1,3 +1,54 @@
+@media (max-width: 900px) {
+  section div#projects ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section div#projects ul li div {
+    text-align: center;
+  }
+}
+
+@media (max-width: 780px) {
+  section div.profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section div.profile h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 370px) {
+  footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer div h2 {
+    text-align: center;
+  }
+  footer div ul li a {
+    font-size: 12px;
+  }
+}
+
 * {
   margin: 0;
   outline: none;
@@ -21,7 +72,7 @@ li {
 }
 
 header {
-  background-image: url("https://images.unsplash.com/photo-1533282960533-51328aa49826?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1330&q=80");
+  background-image: url("https://cdn.pixabay.com/photo/2020/03/26/03/38/phase-of-the-moon-4969110_960_720.jpg");
   background-size: cover;
   background-position: bottom;
   height: 50vh;

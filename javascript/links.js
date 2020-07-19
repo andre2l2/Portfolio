@@ -24,3 +24,9 @@ const links = [
         ]
     }
 ]
+
+const imgLinks = [
+    'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg',
+    'https://cdn.pixabay.com/photo/2018/01/16/23/37/sunset-3087145_960_720.jpg',
+    'https://cdn.pixabay.com/photo/2020/03/26/03/38/phase-of-the-moon-4969110_960_720.jpg'
+]

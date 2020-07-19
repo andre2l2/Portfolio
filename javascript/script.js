@@ -19,4 +19,12 @@ function render() {
     }
 }
 
+function rendomImg() {
+    const randomImg = (Math.floor(Math.random() * 3));
+    const $header = document.querySelector('header');
+
+    $header.style.backgroundImage = `url(${imgLinks[randomImg]})`
+}
+
 render();
+rendomImg();
