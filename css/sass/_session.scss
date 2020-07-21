@@ -10,9 +10,7 @@ section {
 
     div.profile {
         height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCentralize();
 
         img {
             width: 250px;
@@ -82,10 +80,7 @@ section {
     }
 
     div#sobre {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexColumCentralize();
         margin-top: 20vh;
         
         img {

@@ -3,9 +3,7 @@
         div#projects {
             ul {
                 li {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    @include flexCentralize();
 
                     div {
                         text-align: center;
@@ -19,8 +17,7 @@
 @media (max-width: 780px) {
     section {
         div.profile {
-            display: flex;
-            flex-direction: column;
+            @include flexColum();
 
             h1 {
                 text-align: center;
@@ -32,8 +29,7 @@
 @media (max-width: 370px) {
     footer {
         div {
-            display: flex;
-            flex-direction: column;
+            @include flexColum();
 
             h2 {
                 text-align: center;

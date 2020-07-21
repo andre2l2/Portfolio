@@ -1,6 +1,24 @@
 $backgraudColor: #193441;
 $fontColor: #FCFFF5;
 
+@mixin flexCentralize() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin  flexColum() {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexColumCentralize() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @import './sass/responsive';
 @import './sass/reset';
 @import './sass/header';
